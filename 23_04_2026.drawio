@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="78QUDde3ILmcNMK2hGyn">
-    <mxGraphModel dx="2336" dy="1906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3186" dy="1906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -89,7 +89,7 @@
           <mxGeometry height="30" width="140" y="180" as="geometry" />
         </mxCell>
         <mxCell id="RNDkmFGJGW4O4d-jsc1U-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="phan_cong_ca_lams" vertex="1">
-          <mxGeometry height="240" width="140" x="1600" y="-120" as="geometry" />
+          <mxGeometry height="240" width="140" x="-940" y="140" as="geometry" />
         </mxCell>
         <mxCell id="RNDkmFGJGW4O4d-jsc1U-14" parent="RNDkmFGJGW4O4d-jsc1U-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="id" vertex="1">
           <mxGeometry height="30" width="140" y="30" as="geometry" />
@@ -296,6 +296,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RNDkmFGJGW4O4d-jsc1U-91" edge="1" parent="1" source="1bbKcoBMxcC-bXyi0BTe-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="1bbKcoBMxcC-bXyi0BTe-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNDkmFGJGW4O4d-jsc1U-92" edge="1" parent="1" source="1bbKcoBMxcC-bXyi0BTe-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="RNDkmFGJGW4O4d-jsc1U-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
