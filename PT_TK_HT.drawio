@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="jMIGeIwhDSONJixaZnDL">
-    <mxGraphModel dx="2971" dy="1611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1733" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -218,6 +218,155 @@
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
                 <mxPoint x="1926" y="223" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;flowchart LR\n    BN([Bệnh nhân])\n    BYT([Bộ Y tế / Cổng liên thông])\n    NVTN([Nhân viên Tiếp nhận])\n    BS([Bác sĩ])\n    CLS([Khoa Cận lâm sàng])\n    KD([Khoa Dược])\n\n    SYS((0. Hệ thống \\n DN-EMR))\n\n    %% Bệnh nhân\n    BN --&gt;|Thông tin cá nhân, Yêu cầu khám| SYS\n    SYS --&gt;|Phiếu khám, Số thứ tự, Đơn thuốc| BN\n\n    %% NV Tiếp nhận\n    NVTN --&gt;|Nhập dữ liệu đăng ký, Phân luồng| SYS\n    SYS --&gt;|Thông báo tiếp nhận thành công| NVTN\n\n    %% Bác sĩ\n    BS --&gt;|Triệu chứng, Chỉ định CLS, Chẩn đoán, Đơn thuốc| SYS\n    SYS --&gt;|Lịch sử bệnh án, Kết quả CLS| BS\n\n    %% Cận lâm sàng\n    CLS --&gt;|Kết quả Xét nghiệm, Hình ảnh CĐHA| SYS\n    SYS --&gt;|Phiếu yêu cầu CLS| CLS\n\n    %% Khoa Dược\n    KD --&gt;|Xác nhận cấp phát thuốc, Tồn kho| SYS\n    SYS --&gt;|Đơn thuốc điện tử| KD\n\n    %% Bộ Y tế\n    SYS --&gt;|Dữ liệu bệnh án, Báo cáo thống kê| BYT&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="tqPUegxz4M0RNKwFYL7P-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=20;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bệnh nhân" mermaidId="n:BN" mermaidBaseStyle="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bệnh nhân" id="tqPUegxz4M0RNKwFYL7P-2">
+          <mxCell parent="tqPUegxz4M0RNKwFYL7P-1" style="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="39" width="100" x="490" y="598" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bộ Y tế / Cổng liên thông" mermaidId="n:BYT" mermaidBaseStyle="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bộ Y tế / Cổng liên thông" id="tqPUegxz4M0RNKwFYL7P-3">
+          <mxCell parent="tqPUegxz4M0RNKwFYL7P-1" style="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="39" width="208" x="1491" y="796" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Nhân viên Tiếp nhận" mermaidId="n:NVTN" mermaidBaseStyle="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Nhân viên Tiếp nhận" id="tqPUegxz4M0RNKwFYL7P-4">
+          <mxCell parent="tqPUegxz4M0RNKwFYL7P-1" style="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="39" width="172" x="1509" y="440" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bác sĩ" mermaidId="n:BS" mermaidBaseStyle="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bác sĩ" id="tqPUegxz4M0RNKwFYL7P-5">
+          <mxCell parent="tqPUegxz4M0RNKwFYL7P-1" style="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="39" width="65" x="1563" y="529" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Khoa Cận lâm sàng" mermaidId="n:CLS" mermaidBaseStyle="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Khoa Cận lâm sàng" id="tqPUegxz4M0RNKwFYL7P-6">
+          <mxCell parent="tqPUegxz4M0RNKwFYL7P-1" style="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="39" width="159" x="1516" y="618" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Khoa Dược" mermaidId="n:KD" mermaidBaseStyle="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Khoa Dược" id="tqPUegxz4M0RNKwFYL7P-7">
+          <mxCell parent="tqPUegxz4M0RNKwFYL7P-1" style="html=1;rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="39" width="102" x="1544" y="707" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="0. Hệ thống&#xa;DN-EMR" mermaidId="n:SYS" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="0. Hệ thống&#xa;DN-EMR" id="tqPUegxz4M0RNKwFYL7P-8">
+          <mxCell parent="tqPUegxz4M0RNKwFYL7P-1" style="ellipse;html=1;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="195" width="195" x="889" y="520" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thông tin cá nhân, Yêu cầu khám" mermaidId="e:BN-&gt;SYS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.8333333333333333;exitDx=0;exitDy=0;entryX=0;entryY=0.5666666666666667;entryDx=0;entryDy=0;curved=1;exitX=1;exitY=0.83;entryX=0;entryY=0.57;" mermaidBaseValue="Thông tin cá nhân, Yêu cầu khám" id="tqPUegxz4M0RNKwFYL7P-9">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.83;exitDx=0;exitDy=0;entryX=0;entryY=0.57;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-8">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="740" y="750" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Phiếu khám, Số thứ tự, Đơn thuốc" mermaidId="e:SYS-&gt;BN#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.43333333333333335;exitDx=0;exitDy=0;entryX=1;entryY=0.16666666666666669;entryDx=0;entryDy=0;curved=1;exitX=0;exitY=0.43;entryX=1;entryY=0.17;" mermaidBaseValue="Phiếu khám, Số thứ tự, Đơn thuốc" id="tqPUegxz4M0RNKwFYL7P-10">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.43;exitDx=0;exitDy=0;entryX=1;entryY=0.17;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-2">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="740" y="481" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Nhập dữ liệu đăng ký, Phân luồng" mermaidId="e:NVTN-&gt;SYS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.8333333333333333;exitDx=0;exitDy=0;entryX=1;entryY=0.5666666666666667;entryDx=0;entryDy=0;curved=1;exitX=0;exitY=0.83;entryX=1;entryY=0.57;" mermaidBaseValue="Nhập dữ liệu đăng ký, Phân luồng" id="tqPUegxz4M0RNKwFYL7P-11">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.83;exitDx=0;exitDy=0;entryX=1;entryY=0.57;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-8">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1297" y="672" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thông báo tiếp nhận thành công" mermaidId="e:SYS-&gt;NVTN#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43333333333333335;exitDx=0;exitDy=0;entryX=0;entryY=0.16666666666666669;entryDx=0;entryDy=0;curved=1;exitX=1;exitY=0.43;entryX=0;entryY=0.17;" mermaidBaseValue="Thông báo tiếp nhận thành công" id="tqPUegxz4M0RNKwFYL7P-12">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43;exitDx=0;exitDy=0;entryX=0;entryY=0.17;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-4">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1297" y="410" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Triệu chứng, Chỉ định CLS, Chẩn đoán, Đơn thuốc" mermaidId="e:BS-&gt;SYS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.8333333333333333;exitDx=0;exitDy=0;entryX=1;entryY=0.5666666666666667;entryDx=0;entryDy=0;curved=1;exitX=0;exitY=0.83;entryX=1;entryY=0.57;" mermaidBaseValue="Triệu chứng, Chỉ định CLS, Chẩn đoán, Đơn thuốc" id="tqPUegxz4M0RNKwFYL7P-13">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.83;exitDx=0;exitDy=0;entryX=1;entryY=0.57;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-8">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1324" y="774" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lịch sử bệnh án, Kết quả CLS" mermaidId="e:SYS-&gt;BS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43333333333333335;exitDx=0;exitDy=0;entryX=0;entryY=0.16666666666666669;entryDx=0;entryDy=0;curved=1;exitX=1;exitY=0.43;entryX=0;entryY=0.17;" mermaidBaseValue="Lịch sử bệnh án, Kết quả CLS" id="tqPUegxz4M0RNKwFYL7P-14">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43;exitDx=0;exitDy=0;entryX=0;entryY=0.17;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-5">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1324" y="465" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kết quả Xét nghiệm, Hình ảnh CĐHA" mermaidId="e:CLS-&gt;SYS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.8333333333333333;exitDx=0;exitDy=0;entryX=1;entryY=0.5666666666666667;entryDx=0;entryDy=0;curved=1;exitX=0;exitY=0.83;entryX=1;entryY=0.57;" mermaidBaseValue="Kết quả Xét nghiệm, Hình ảnh CĐHA" id="tqPUegxz4M0RNKwFYL7P-15">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.83;exitDx=0;exitDy=0;entryX=1;entryY=0.57;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-8">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1300" y="771" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Phiếu yêu cầu CLS" mermaidId="e:SYS-&gt;CLS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43333333333333335;exitDx=0;exitDy=0;entryX=0;entryY=0.16666666666666669;entryDx=0;entryDy=0;curved=1;exitX=1;exitY=0.43;entryX=0;entryY=0.17;" mermaidBaseValue="Phiếu yêu cầu CLS" id="tqPUegxz4M0RNKwFYL7P-16">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43;exitDx=0;exitDy=0;entryX=0;entryY=0.17;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-6">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1300" y="550" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Xác nhận cấp phát thuốc, Tồn kho" mermaidId="e:KD-&gt;SYS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.8333333333333333;exitDx=0;exitDy=0;entryX=1;entryY=0.5666666666666667;entryDx=0;entryDy=0;curved=1;exitX=0;exitY=0.83;entryX=1;entryY=0.57;" mermaidBaseValue="Xác nhận cấp phát thuốc, Tồn kho" id="tqPUegxz4M0RNKwFYL7P-17">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.83;exitDx=0;exitDy=0;entryX=1;entryY=0.57;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-8">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1314" y="809" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Đơn thuốc điện tử" mermaidId="e:SYS-&gt;KD#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43333333333333335;exitDx=0;exitDy=0;entryX=0;entryY=0.16666666666666669;entryDx=0;entryDy=0;curved=1;exitX=1;exitY=0.43;entryX=0;entryY=0.17;" mermaidBaseValue="Đơn thuốc điện tử" id="tqPUegxz4M0RNKwFYL7P-18">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.43;exitDx=0;exitDy=0;entryX=0;entryY=0.17;entryDx=0;entryDy=0;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-7">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1314" y="594" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Dữ liệu bệnh án, Báo cáo thống kê" mermaidId="e:SYS-&gt;BYT#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.83;entryX=0;entryY=0.49;" mermaidBaseValue="Dữ liệu bệnh án, Báo cáo thống kê" id="tqPUegxz4M0RNKwFYL7P-19">
+          <mxCell edge="1" parent="tqPUegxz4M0RNKwFYL7P-1" source="tqPUegxz4M0RNKwFYL7P-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.83;entryX=0;entryY=0.49;rounded=0;" target="tqPUegxz4M0RNKwFYL7P-3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1288" y="815" />
               </Array>
             </mxGeometry>
           </mxCell>
